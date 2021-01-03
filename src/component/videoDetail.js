@@ -9,7 +9,7 @@ const VideoDETAIL = ({ video }) => {
     return (
         <div className="ui segment">
             <div>
-                <iframe width="500" height="300" title="video de Youtube" src={VideoDir} />
+                <iframe width="100%" height="300" title="video de Youtube" src={VideoDir} />
             </div>
             <h4 className="ui header">Titulo: {video.snippet.title}</h4>
             <p>{video.snippet.description}</p>

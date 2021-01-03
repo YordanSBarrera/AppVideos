@@ -24,7 +24,10 @@ class App extends React.Component {
             }
         });
 
-        this.setState({ videos: respVideos.data.items })
+        this.setState({ 
+            videos: respVideos.data.items,
+            selectVideo:respVideos.data.items[0]
+         })
         console.log(this.state.videos)
     }
 
